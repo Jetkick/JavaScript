@@ -11,5 +11,9 @@ if(result) {
 
 // ex
 
-const result2 = '?';
-if(result2) console.log(result2);
+const result2 = false;
+if(result2) {
+  console.log('result가 실행되지 않습니다.')
+} else if (!result2) 
+console.log('result가 참이 되어')
+console.log('result가 실행됩니다.')

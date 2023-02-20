@@ -26,12 +26,17 @@ if (표현식1) {
 
 // ex
 
-const result2 = '?';
-if(result2) console.log(result2);
+const result = 'hello';
 
-if (result2 > 100) {
+if (result > 100) {
   console.log('true?');
-} else if (result2 == String) {
+} else if (result == 'hello') {
+  console.log('true')
+} else if (result = 'hi') {
   console.log('true?') 
-} else (result2) 
-  console.log('false?')
+} else { 
+  console.log('false')
+}
+
+// else 는 모든 조건들이 '참' 이 아닐 시 반환하며, () 조건이 들어가지 않음
+// else () {} = 구문 오류
