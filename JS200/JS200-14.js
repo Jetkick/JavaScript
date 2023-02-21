@@ -46,17 +46,17 @@ for (let result in c) {
 
 // ex 4
 
-// const d = [
-//   {one : 100, two : 200},
-//   {three : 300}
-// ];
+const d = [
+  {one : 100, two : 200},
+  {three : 300}
+];
 
-// for (let item in d) {
-//   if (d.shift(item).hasOwnProperty(item)) {
-//     console.log('key ' + item + ' value : ' + d[item]);
-//   } else {
-//     console.log(d);
-//   }
-// }
+for (let item in d) {
+  if (d.shift(item).hasOwnProperty(item)) {
+    console.log('key ' + item + ' value : ' + d[item]);
+  } else {
+    console.log(d);
+  }
+}
 
 // 배열에 담긴 객체 값을 추출하는 방법은?
