@@ -1,7 +1,8 @@
 
 // JS 200제 객체 이해하기 2 (초급 29)
 
-// 진행중 
+// 진행중
+// key : value 객체 값에 접근하는 방법은??
 
 let family = {
   'address' : 'Seoul',

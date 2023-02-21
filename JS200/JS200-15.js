@@ -33,7 +33,6 @@ const isHometown = function (h, name) {
 
 // 객체인 h의 name 과 인자로 받은 name 이 다른 경우 false 를 반환하며 종료. 값이 동일하면 console.log를 출력하고 true를 반환합니다.
 
-let h;
 while (h = hometown.shift()) {
   if (!h.name || !h.place || !h.city) continue;
 
@@ -62,23 +61,30 @@ let myMusic = [
 ];
 
 
-const music = (a, genre) => {
-  console.log(`함수가 실행됩니다 ${a.name} 이 좋아하는 장르는 ${a.genre} 입니다.`);
+const music = (favoriteMusic, genre) => {
+  console.log(`함수가 실행됩니다 ${favoriteMusic.name} 이 좋아하는 장르는 ${favoriteMusic.genre} 입니다.`);
 
-  if (a.name === genre) {
-    console.log(`${a.name} 이 좋아하는 장르는 ${a.genre} 이고, 소울이 ${a.soul}`);
+  if (favoriteMusic.name === genre) {
+    console.log(`${favoriteMusic.name} 이 좋아하는 장르는 ${favoriteMusic.genre} 이고, 소울이 ${favoriteMusic.soul}`);
     return true;
   }
   return false;
 }
 
-let a;
-while (a = myMusic.shift()) {
-  if (!a.name || !a.genre || !a.soul) continue;
+for (let i = 0; i < myMusic.length; i++) {
+  const favoriteMusic = myMusic[i];
+  if (!favoriteMusic.name || !favoriteMusic.genre || !favoriteMusic.soul) continue;
 
-  let result = music(a, '남준');
-  if(result) break;
+  let result = music(favoriteMusic, '남준');
+  if (result) break;
+
 };
+
+// while (favoriteMusic = myMusic.shift()) {
+//   if (!favoriteMusic.name || !favoriteMusic.genre || !favoriteMusic.soul) continue;
+  
+//   let result = music(favoriteMusic, '남준');
+//   if(result) break;
 
 // Cannot access 'music' before initialization 선언이 되지 않았기에 먼저 사용할 수 없음.
 //
