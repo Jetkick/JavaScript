@@ -46,10 +46,6 @@
 // Mutable data types : all objects by default are mutables in JS
 
 
-// Immutable data type
-// - security
-// - thread safety
-// - reduce human mistakes
 
  // object => ref => name => ellie
 //  (ellie)              => age  => 20
@@ -68,7 +64,7 @@
 // boolean
 // null = 명확하게 지정한 비어있는 값. type = object
 
-// undefined = 선언은 되었으나 값이 지정되어 있지 비어있는 않은 값
+// undefined = 선언은 되었으나 값이 지정되지 않은 비어있는 값
 
 // symbol = 고유한 식별자나 우선 순위를 주고 싶을 때 사용한다.
 // const symbol1 = Symbol('id');
@@ -90,3 +86,5 @@ console.log(`value : ${text}, type : ${typeof text}`); // string 과 number stri
 
 text = '8' / '2';
 console.log(`value : ${text}, type : ${typeof text}`); // string 이 number 로
+
+// src = "https://docs.google.com/spreadsheets/d/1jPgKFwDbmccGt6ulTNG_5LTHwBaxzo8GpWPPNOsjlog/edit?usp=sharing"
