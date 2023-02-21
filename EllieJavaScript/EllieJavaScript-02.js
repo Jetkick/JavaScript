@@ -35,3 +35,5 @@
 // 할 수 있는 부분이 많다보니 유연하면서 위험한 부분이 많다.
 // 그래서 다른 언어와 같이 제약을 걸어주고 싶을 때 strict mode 를 켜주면 된다.
 // flexible === dangerous
+
+// src = "https://docs.google.com/spreadsheets/d/1xlXG4A1ALo8FGNmbAl4QT_WCVfXDERsieGVoWSkOf_M/edit?usp=sharing"
