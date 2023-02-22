@@ -19,28 +19,18 @@
 const solution = str => {
 
   const fruit = {
-    banana : '바나나',
-    plum : '자두',
-    tangerine : '귤',
-    mango : '망고'
+    '바나나' : 1500,
+    '자두' : 1200
   }
 
-
-  if (fruit.banana === str) {
-    console.log('바나나 상품은 1500원입니다')
-  } else if(fruit['plum'] === str) {
-    console.log('바나나 상품은 1200원입니다.')
-  } else if(fruit['tangerine'] === str) {
-    console.log('귤 상품이 없습니다.')
-  } else if (fruit.mango === str) {
-    console.log('망고 상품이 없습니다.')
+  if(fruit[str]) {
+    console.log(str + ' 상품은 ' + fruit[str] + '원입니다.');
   } else {
-    console.log('찾으시는 과일이 없습니다')
+    console.log(`${str} 상품이 없습니다`)
   }
-  
+
   return str
 }
-
 
 console.log(solution('바나나')) // 바나나 상품은 1500원입니다.
 console.log(solution('자두')) // 바나나 상품은 1200원입니다.
