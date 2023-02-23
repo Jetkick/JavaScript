@@ -24,12 +24,11 @@ const solution = str => {
   }
 
   if(fruit[str]) {
-    console.log(str + ' 상품은 ' + fruit[str] + '원입니다.');
+    return str + ' 상품은 ' + fruit[str] + '원입니다.';
   } else {
-    console.log(`${str} 상품이 없습니다`)
-  }
+    return (`${str} 상품이 없습니다`)
+  };
 
-  return str
 }
 
 console.log(solution('바나나')) // 바나나 상품은 1500원입니다.
