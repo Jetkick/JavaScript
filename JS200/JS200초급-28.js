@@ -1,12 +1,14 @@
 
 // JS 200제 객체 이해하기 1 (초급 28)
 
+// 자료구조 객체 정리하기
+
 let family = {
   'address' : 'Seoul',
   members : {},
 
   addFamily : function(age, name, role) {
-    this.members[role] = { // this 메소드를 통해 family 객체 내부  속성에 접근 가능
+    this.members[role] = { // this 메소드를 통해 family 객체 내부 속성에 접근이 가능.
       age : age,
       name : name
     };
