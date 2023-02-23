@@ -3,19 +3,16 @@
 let userInfo = {
   name:"sina",
   ableSkill:{},
-  setAbleSkill : function (key) {
+  setAbleSkill : function (args) {
     this.ableSkill = {
-      ...userInfo.ableSkill,
-      ...userInfo.ableSkill = key // 마지막 인자값 호출
+    ...userInfo.ableSkill,
+    ...args
     }
   }
 }
 
 userInfo.setAbleSkill({"javascript":"10점"});
-userInfo.setAbleSkill({"mysql":"8점"});
-
-
-
+userInfo.setAbleSkill({"mysql":"8점"})
 console.log(userInfo.ableSkill);
 
 // userInfo.ableSkill
