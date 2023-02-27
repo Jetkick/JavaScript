@@ -13,3 +13,12 @@ let person = {
   [profile.split(':')[0]] : profile.split(':')[1]
 };
 console.log(person);
+
+// ex 1
+
+let coffeeCountry = 'blueMountain:awesome';
+let coffee = {
+  [coffeeCountry] : false,
+  [coffeeCountry.split(':')[0]] : coffeeCountry.split(':')[1]
+};
+console.log(coffee);

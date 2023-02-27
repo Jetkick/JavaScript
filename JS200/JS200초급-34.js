@@ -11,3 +11,13 @@ function greeting_declaration(name) {
 
 console.log(greeting_expression('chloe'))
 greeting_declaration('chloe');
+
+// ex
+
+let getCoffee = function(coffee) {
+  let country = coffee;
+
+  return console.log(country);
+}
+
+getCoffee('blueMountain');

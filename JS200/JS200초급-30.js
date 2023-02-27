@@ -19,3 +19,27 @@ family.addFamily(30, 'chloe', 'aunt');
 family.addFamily(3, 'lyn', 'niece');
 family.addFamily(10, 'dangdangi', 'dog');
 console.log(family.getHeadcount());
+
+// ex 1
+
+let monster = '고카페인';
+let drink = 'monster';
+let coffee = {};
+
+let addcoffee = function(country, kind, coffee) {
+  this.coffee[country] = {
+    kind : kind,
+    coffee : coffee
+  };
+};
+
+let getHeadcoffee = function() {
+  return Object.keys(this.coffee).length;
+};
+
+let object = {monster, drink, coffee, addcoffee, getHeadcoffee}
+
+object.addcoffee('santos', '원두', '마일드한 커피')
+object.addcoffee('blueMountain', '원두', '비쌈')
+object.addcoffee('guatemala', '원두', '쌈')
+console.log(object.getHeadcoffee());
