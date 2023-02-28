@@ -26,7 +26,7 @@ const notCalled = undefined;
 // console.log(typeof notCalled === 'undefined'); // true
 
 console.log(str instanceof String);
-console.log(strobj instanceof String);
+console.log(strObj instanceof String);
 console.log(num instanceof Number);
 console.log(numObj instanceof Number);
 console.log(bool instanceof Boolean);
