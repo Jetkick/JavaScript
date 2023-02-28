@@ -1,8 +1,6 @@
 
 // JS 200제 객체 이해하기 1 (초급 28)
 
-// 자료구조 객체 정리하기
-
 let family = {
   'address' : 'Seoul',
   members : {},
@@ -17,9 +15,8 @@ let family = {
   getHeadcount : function() {
     return Object.keys(this.members).length;
   }
-
+  
 };
-
 family.addFamily(30, 'chloe', 'aunt');
 family.addFamily(3, 'lyn', 'niece');
 family.addFamily(10, 'dangdangi', 'dog');
