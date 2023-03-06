@@ -43,8 +43,14 @@ const engineers = [
       getData = getData.lang == 'javascript'
       return getData
     })
-    // console.log(answer.reverse());
-    return answer.reverse();
+    const result = answer.sort((a, b) => {
+      if (a.age > b.age) {
+        return -1;
+      }
+    });
+    console.log(result)
+    
+    return result
   };
 solution2(engineers)
 
@@ -73,7 +79,7 @@ const solution3 = (example) => {
     return credit + ',000'
   })
 
-  console.log(result);
+  // console.log(result);
   return result
 }
 solution3(example)
