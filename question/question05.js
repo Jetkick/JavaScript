@@ -4,6 +4,14 @@
 // ex) [2,7,3,7] 1 * 2 * 3 = 6
 
 const solution1 = (arr) => {
+  const array = arr.reduce((acmlt, value, index) => {
+  if (index % 2 === 0) {
+    return acmlt * value
+  }
+  return acmlt
+  }, 1);
+  // console.log(array);
+  return array
 };
 solution1([1,2,3,4,5]) // -> 15
 solution1([2,7,3,7]) // -> 6
@@ -30,14 +38,28 @@ const engineers = [
   { id: 8, lang: "java", age: 29 },
 ];
 
-  const solution2 = (engineers) => {};
+  const solution2 = (engineers) => {
+    const answer = engineers.filter(getData => {
+      getData = getData.lang == 'javascript'
+      return getData
+    })
+    const result = answer.sort((a, b) => {
+      if (a.age > b.age) {
+        return -1;
+      }
+    });
+    console.log(result)
+    
+    return result
+  };
+solution2(engineers)
 
-//solution2(engineers) 
-//   [
-//     { id: 6, lang: 'javascript', age: 35 },
-//     { id: 2, lang: 'javascript', age: 31 }
-//   ]
+  // [
+  //   { id: 6, lang: 'javascript', age: 35 },
+  //   { id: 2, lang: 'javascript', age: 31 }
+  // ]
 //----------------------------------------------------------------------------------------------------------------
+
 
 //아래 credit은 000원이 생략되어 있습니다. 
 // credit에 접근해서 ,000 을 추가해서 [ '30,000', '70,000', '120,000' ] 이렇게 return해주세요
@@ -50,5 +72,15 @@ const example = {
     homeService:120
   }
 }
-const solution3 = (example) => {}
+const solution3 = (example) => {
+  const getCredit = example.credit;
+  const getData = Object.values(getCredit);
+  const result = getData.map(credit => {
+    return credit + ',000'
+  })
+
+  // console.log(result);
+  return result
+}
+solution3(example)
 //solution3(example) [ '30,000', '70,000', '120,000' ]
